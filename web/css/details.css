@@ -1,0 +1,122 @@
+.detail {
+	float: left;
+	width: 755px;
+	padding: 0 20px;
+	background: #f4efec;
+}
+.detail h3 {
+	float: left;
+	width: 100%;
+	line-height: 135px;
+	text-align: center;
+	font-weight: bold;
+	color: #393939;
+	font-size: 22px;
+}
+.detail .show_tag {
+	float: left;
+	width: 100%;
+	line-height: 35px;
+	border-bottom:1px solid #e2d7c6;
+}
+.detail .show_tag span {
+	float: left;
+	color: #b99f6f;
+	font-size: 14px;
+	margin-right: 40px;
+}
+.detail .show_tag span.browse {
+	float: right;
+}
+.detail .content {
+	float: left;
+	color: #555;
+	line-height: 30px;
+	font-size: 14px;
+	padding-bottom: 50px;
+	padding: 10px 0;
+}
+.related_articles {
+	float: left;
+	width: 100%;
+	padding-bottom: 50px;
+
+}
+.related_articles .title {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #e2d7c6;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+.related_articles h4 {
+	float: left;
+	color: #393939;
+	font-size: 18px;
+	font-weight: bold;
+}
+.related_articles .share {
+	float: right;
+}
+.share span {
+	float: left;
+}
+.share a {
+	float: left;
+	display: inline-block;
+	width: 30px;
+	height: 22px;
+	margin-left: 10px;
+	margin-top: 11px;
+}
+.share .WeChat {
+	background: url(../images/WeChat.png);
+}
+.share .microblog {
+	background: url(../images/microblog.png);
+}
+.share .space {
+	background: url(../images/space.png);
+}
+.share .people {
+	background: url(../images/people.png);
+}
+
+.related_articles p {
+	float: left;
+	width: 100%;
+	line-height: 30px;
+}
+.related_articles p a {
+	display: block;
+	float: left;
+	width: 628px;
+	overflow:hidden;
+	text-overflow:ellipsis; 
+	white-space: nowrap;
+	font-size: 14px;
+	color: #393939;
+
+}
+.related_articles p a:visited,.related_articles p a:hover,.related_articles p a:active{
+	text-decoration: underline;
+	color: #846731;
+}
+.Categories a {
+	color: #b99f6f;
+}
+.Categories a:hover {
+	text-decoration: underline;
+}
+.share .bdshare-button-style0-16 {
+	float:left;
+}
+.share .bdshare-button-style0-16 a, .share .bdshare-button-style0-16 .bds_more {
+	background: url(../images/WeChat.png);
+	width: 30px;
+	height:22px;
+	padding: 0;
+	margin: 0;
+	margin-left: 10px;
+	margin-top: 11px;
+}

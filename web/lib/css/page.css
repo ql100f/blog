@@ -1,0 +1,20 @@
+.page *{ margin:0; padding:0; list-style:none;}
+a{ text-decoration:none;}
+
+.page{float:left;padding:20px 0;background:#fff;/*border-top:1px solid #EEEEEE;*/}
+.page a,.page span{float:left;display: inline-block;margin-right: 10px;height: 30px;font-size: 12px;color: #333;text-align: center;}
+.page a{min-width: 30px;line-height: 30px;padding:0 2px;background:#f5f5f5;cursor: pointer;}
+.page .nextPage,.page .prevPage{width: auto;padding:0 8px;}
+.page a:hover{outline:1px solid #41a8fa;}
+
+.page span{font-weight:bold;line-height: 24px;/*省略号垂直居中*/}
+.page span.current{min-width:30px;line-height: 30px;color: #fff;background: #41a8fa;}
+.page span.disabled{padding: 0 8px;line-height: 30px;font-weight:normal;color: #bfbfbf;background: #f2f2f2;border: 1px solid #eee;}
+/*翻页的样式*/
+.page #skipPageInput{
+	width: 42px;
+  height: 22px;
+  margin: 4px 0 0 2px;
+  font-size: 12px;
+  color: #333;
+}

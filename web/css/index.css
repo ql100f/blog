@@ -1,0 +1,157 @@
+.hot_pic{
+	float: left;
+	position: relative;
+	width: 795px;
+	height: 300px;
+	overflow: hidden;
+}
+.hot_pic ul {
+	position: absolute;
+	width: 2385px;
+	height: 300px;
+}
+.hot_pic ul li {
+	float: left;
+	width: 795px;
+	height: 300px;
+}
+.hot_pic ul li img {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.hot_pic span {
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background: #fff;
+	top: 260px;
+	cursor: pointer;
+	border:2px solid #000;
+	opacity: 0.5;
+}
+.hot_pic span:nth-child(2) {	
+	left: 340px;
+}
+.hot_pic span:nth-child(3) {
+	left: 370px;
+}
+.hot_pic span:nth-child(4) {
+	left: 400px;
+}
+.hot_pic span.select {
+	background: #000;
+}
+.main {
+	width: 1100px;
+	margin:0 auto;
+	overflow: hidden;
+	margin-top: 20px;
+}
+section {
+	float: left;
+	width: 795px;
+	background: #f4efec;
+	margin-top: 20px;
+}
+section article {
+	float: left;
+	position: relative;
+	width: 755px;
+	height: 108px;
+	padding: 30px 20px;
+	border-top: 1px solid #f4efec;
+	border-bottom: 1px solid #f4efec;
+}
+section article:hover{
+	height: 108px;
+	background: #eee7df;
+	border-top: 1px solid #e2d7c6;
+	border-bottom: 1px solid #e2d7c6;
+}
+section article h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #393939;
+}
+section article h2 a {
+	color: #393939;
+}
+section article h2 a:hover {
+	text-decoration: underline;
+}
+section article p {
+	float: left;
+	margin-top: 10px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #555555;
+	width:755px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis; 
+}
+section article .tag {
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	color: #c8b492;
+	font-size: 14px;
+}
+section article .tag a {
+	color: #c8b492;
+}
+section article .tag a:hover {
+	text-decoration: underline;
+}
+section article .tag span {
+	float:left;
+	padding-right: 40px;
+}
+section article .tag span.browse {
+	position: absolute;
+	right: 20px;
+}
+section article>a {
+	position: absolute;
+	display: block;
+	width: 156px;
+	height: 94px;
+}
+section article .right_main {
+	position: absolute;
+	left:196px;
+	width: 580px;
+}
+section article .right_main p {
+	width: 580px;
+}
+.page_main {
+	position: relative;
+	float: left;
+	padding: 55px 0;
+	width: 795px;
+	background: #f4efec;
+}
+.main .page{
+	position: absolute;
+	background: #f4efec;
+	right: 10px;
+	bottom: 20px;
+}
+.main .page span,.main .page a {
+	color: #c1ab84;
+	border-radius: 2px;
+}
+.main .page span.current {
+	background: #846731;
+}
+.main .page a:hover {
+	outline: 1px solid #846731;
+	border-radius: 2px;
+}
+
+
+
