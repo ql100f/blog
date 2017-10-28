@@ -7,11 +7,10 @@ use yii\web\Controller;
  * 首页
  * 
  * @author mrchen
- * 
  */
 class HomeController extends Controller{
 	
-	public $layout = "blog";
+	public $layout = "main";
 	/**
 	 * 首页
 	 */

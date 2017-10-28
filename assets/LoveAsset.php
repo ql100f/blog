@@ -13,23 +13,23 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class AppAsset extends AssetBundle
+class LoveAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/common/common.css',
-        'css/index.css',
-        'lib/css/page.css',
+        'mylove/css/common/common.css',
+        'mylove/css/index.css',
+        'mylove/lib/css/page.css',
     ];
     public $js = [
-    		'lib/js/jquery.js',
-    		'lib/js/jquery.page.js',
-    		'js/common/blogInterface.js',
-    		'js/common/common.js',
-    		'js/common/header.js',
-    		'js/common/sidebar.js',
-    		'js/index.js',
+    		'mylove/lib/js/jquery.js',
+    		'mylove/lib/js/jquery.page.js',
+    		'mylove/js/common/blogInterface.js',
+    		'mylove/js/common/common.js',
+    		'mylove/js/common/header.js',
+    		'mylove/js/common/sidebar.js',
+    		'mylove/js/index.js',
     ];
     public $depends = [
     ];
