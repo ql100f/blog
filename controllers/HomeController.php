@@ -1,8 +1,11 @@
 <?php
 namespace app\controllers;
 
+use yii;
 use yii\web\Controller;
-
+use app\models\Article;
+use app\models\Category;
+use yii\data\Pagination;
 /**
  * 首页
  * 
@@ -15,11 +18,25 @@ class HomeController extends Controller{
 	 * 首页
 	 */
 	public function actionIndex(){
-		echo "index";
+		$query = Article::find()->where('status=:status',[':status'=>1])->orderBy("id desc");
+		$count = $query->count();
+		$page = new Pagination(['totalCount'=>$count,'pageSize'=>yii::$app->params['pageSize']]);
+		$articles = $query->offset($page->offset)->limit($page->limit)->with("category")->all();
+		return $this->render("index",['articles'=>$articles,'page'=>$page]);
 	}
 	
 	
+	
+	public function actionDetail($id){
+		$article = Article::findOne($id);
+		return $this->render('detail',['article'=>$article]);
+	}
+	
 	public function actionShow(){
-		return $this->render("index");
+		if(isset($b)){
+			echo "is set";
+		}else{
+			echo "is not set";
+		}
 	}
 }

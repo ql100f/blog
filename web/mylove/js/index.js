@@ -14,9 +14,6 @@ $(function(){
 		$(".hot_pic span").eq(self_index).addClass("select").siblings().removeClass("select");
 
 	})
-
-	// 渲染博客列表
-	blogList(1); 
 })
 
 // 焦点图幻灯

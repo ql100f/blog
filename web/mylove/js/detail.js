@@ -4,7 +4,6 @@ $(function(){
 	var reg2=/=[\S]+/;
 	var thisIndex=urlContent.match(reg2).index;
 	var	result=urlContent.slice(thisIndex+1);
-	showDetail(result);
 	$("body").on("click",".related_articles p a",function(){
 		var this_id=$(this).attr("id");
 		// showDetail(this_id)
@@ -57,28 +56,3 @@ $(function(){
 	})
 	
 })
-// 显示博客详情
-function showDetail(blogId){
-	$.ajax({
-		url:blogDetailsUrl,
-		type:"get",
-		data:{blogId:blogId},
-		dataType:"json",
-		success:function(result){
-			if(result.rlt){
-				var data = result.data;
-				$(".class_show").text(data.title);
-				$("body").on("click",".class_show",function(){
-					window.open(URL+"details.html?id="+data.id,"_self")
-				})
-				var str = '<h3>'+data.title+'</h3><div class="show_tag"><span class="author">作者：'+data.author+'</span><span class="time">'+data.time+'</span><span class="Categories">分类 [<a href="'+URL+'list.html?classId='+data.CategoriesId+'" id="'+data.CategoriesId+'">'+data.Categories+'</a>]</span><span class="browse">浏览：（'+data.browse+'）</span></div><div class="content">'+data.content+'</div><div class="related_articles"><div class="title"><h4>相关文章</h4><div class="share"><span>分享到：</span><div class="bdsharebuttonbox" data-tag="share_1"><a class="bds_weixin" data-cmd="weixin"></a></div><a href="javascript:;" class="microblog"></a><a href="javascript:;" class="space"></a><a href="javascript:;" class="people"></a></div></div><p><a href="javascript:void(0)" title="'+data.previous.title+'" id="'+data.previous.id+'">上一篇：'+data.previous.title+'</a></p><p><a href="javascript:void(0)" title="'+data.next.title+'" id="'+data.next.id+'">下一篇：'+data.next.title+'</a></p></div>';
-				$(".detail").empty().html(str);
-			}else{
-				lertBox(result.msg);
-			}
-		},
-		error:function(result){
-			alertBox(result.msg);
-		}
-	})
-}

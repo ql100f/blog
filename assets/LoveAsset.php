@@ -29,7 +29,6 @@ class LoveAsset extends AssetBundle
     		'mylove/js/common/common.js',
     		'mylove/js/common/header.js',
     		'mylove/js/common/sidebar.js',
-    		'mylove/js/index.js',
     ];
     public $depends = [
     ];

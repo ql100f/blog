@@ -135,23 +135,54 @@ section article .right_main p {
 	width: 795px;
 	background: #f4efec;
 }
-.main .page{
+.page_main .page{
 	position: absolute;
 	background: #f4efec;
 	right: 10px;
 	bottom: 20px;
 }
-.main .page span,.main .page a {
+.page_main .page li {
+	margin-right:10px;
 	color: #c1ab84;
 	border-radius: 2px;
+	float:left;
 }
-.main .page span.current {
-	background: #846731;
-}
-.main .page a:hover {
-	outline: 1px solid #846731;
+.page_main .page li a {
+	margin-right:0;
+	color: #c1ab84;
 	border-radius: 2px;
+	float:left;
+	background:none;
 }
+.page_main .page li.active a {
+	border-radius: 2px;
+	background: #846731;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

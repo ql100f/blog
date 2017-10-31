@@ -26,7 +26,7 @@ LoveAsset::register ($this);
 	</div>
 </header>
 <nav>
-	<a href="javascript:void(0)">首页</a>
+	<a href="/index.php?r=home/index">首页</a>
 	<a href="javascript:void(0)">技术日记</a>
 	<a href="javascript:void(0)">情感日记</a>
 	<a href="javascript:void(0)">关于我</a>
