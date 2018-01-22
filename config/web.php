@@ -12,7 +12,7 @@ $config = [
 					'class' =>	'app\modules\weixin\Module',
 			],
 	],
-	'defaultRoute' => 'home/show',
+	'defaultRoute' => 'home/index',
     'components' => [
         'request' => [
             'cookieValidationKey' => 'rcBExitruWfddacxeReU9kAZ9Kf8XiGp',

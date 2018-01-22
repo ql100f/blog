@@ -13,8 +13,15 @@ use app\models\ContactForm;
 class SiteController extends Controller
 {
     /**
-     * @inheritdoc
+     * Displays homepage.
+     *
+     * @return string
      */
+    public function actionIndex()
+    {
+        return $this->render('index');
+    }
+
     public function behaviors()
     {
         return [
@@ -52,16 +59,6 @@ class SiteController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
     }
 
     /**
